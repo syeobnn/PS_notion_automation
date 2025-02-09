@@ -51,7 +51,6 @@ async function takeGitProblems(env) {
         const response = await fetch(tierUrl, { headers: GITHUB_HEADERS(env) });
 
         if (response.ok) {
-            //console.log(`${tierUrl} im okay\n`);
             const items = await response.json();
             let numbers = [];
 
@@ -144,8 +143,6 @@ async function addProblemToNotion(env, problemId, problemInfo, DATABASE_ID) {
         }
     };
 
-    //console.log("Notion API JSON:", JSON.stringify(newPageData, null, 2));
-
     const response = await fetch(url, { method: "POST", headers: NOTION_HEADERS(env), body: JSON.stringify(newPageData) });
 
     if (response.ok) {
@@ -180,8 +177,6 @@ async function addProblemListToNotion(env) {
   const DATABASE_ID = getDatabaseId(env);
   const resultDict = await takeGitProblems(env);
   const existingProblemIds = await getExistingProblemIds(env, DATABASE_ID);
-
-  //console.log(`현재 사용자가(${BAEK_HANDLE}) 푼 문제 목록:`, existingProblemIds);
 
   for (const [tier, problemList] of Object.entries(resultDict)) {
       for (const problemId of problemList) {
