@@ -152,8 +152,12 @@ async function addProblemToNotion(env, problemId, problemInfo, DATABASE_ID) {
         console.log(`Notion DB에 추가 완료: ${problemId}`);
     } else {
         console.log(`Notion 추가 실패: ${response.status}`);
-        const errorText = await response.text();
-        console.log("오류 정보:", errorText);
+
+        if (response.status === 401 || response.status === 403) {
+            console.error("API 키 또는 권한 확인 필요.");
+        } else {
+            console.error(`Notion API 호출 실패 (Status: ${response.status})`);
+        }
     }
 }
 
