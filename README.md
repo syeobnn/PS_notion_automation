@@ -11,7 +11,7 @@ https://github.com/BaekjoonHub/BaekjoonHub 참고
 notion api, notion db id를 얻는 방법은 해당 게시글 참고
 https://wooncloud.tistory.com/131
 
-필자의 노션 속성은 다음과 같다.
+필자의 노션DB 테이블 속성은 다음과 같다.
 ![hi](./images/notionDB_attribute.png)
 
 github api
