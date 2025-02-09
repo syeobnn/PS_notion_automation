@@ -2,7 +2,8 @@
 
 ## cloudflare workers에서 서버리스로 코드가 자동 실행되도록 한다.
 
-### 백준 허브로 git repo에 push된 directory들을 이용한다.
+### 이 코드는 백준 허브로 git repo에 push된 백준 문제 directory들을 이용합니다.
+
 https://github.com/BaekjoonHub/BaekjoonHub 참고
 
 준비물 : 백준 허브를 사용하는 백준 문제 repository, notion db id, notion api, github api
