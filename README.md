@@ -1,8 +1,8 @@
-#notion DB 자동 업로드
+# notion DB 자동 업로드
 
-##cloudflare workers에서 서버리스로 코드가 자동 실행되도록 한다.
+## cloudflare workers에서 서버리스로 코드가 자동 실행되도록 한다.
 
-###백준 허브로 git repo에 push된 directory들을 이용한다.
+### 백준 허브로 git repo에 push된 directory들을 이용한다.
 https://github.com/BaekjoonHub/BaekjoonHub 참고
 
 준비물 : 백준 허브를 사용하는 백준 문제 repository, notion db id, notion api, github api
@@ -31,7 +31,7 @@ cloudworkers_trigger.png
 cloudworkers_variables.png
 cloudworkers_variables_make.png
 
-###Cloudflare workers
+### Cloudflare workers
 
 Cloudflare workers 가입
 
