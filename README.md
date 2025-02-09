@@ -21,17 +21,6 @@ Settings -> Developer settings -> Fine-grained tokens -> generate_new_token 으�
 
 토큰이 생성되면 키가 보일텐데 다시 확인할 수 없으니 복사하고 은밀한 곳에 저장해두자.
 
-cloudworkers_create.png
-
-cloudworkers_cron.png
-
-cloudworkers_edior.png
-
-cloudworkers_first.png
-cloudworkers_trigger.png
-cloudworkers_variables.png
-cloudworkers_variables_make.png
-
 ### Cloudflare workers
 
 Cloudflare workers 가입
